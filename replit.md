@@ -91,11 +91,43 @@ TŌKI is a modern full-stack web application for a Japanese-inspired coffee shop
 - **Database**: Push schema changes with `npm run db:push`
 - **Testing**: Built-in error handling and logging for debugging
 
+## Simplified Version Available
+
+The application now offers two versions:
+
+### Simple Landing Page (Default - `/`)
+- **Pure static content** - No database or backend dependencies
+- **Minimalist design** - Clean, focused on essential information
+- **Static menu** - Hard-coded menu items and pricing
+- **Contact information** - Simple location, hours, and contact details
+- **No complex features** - Removed QR codes, trivia, user tracking
+
+### Full Featured Version (`/full`)
+- **Complete backend system** - Database, API endpoints, user management
+- **Interactive features** - QR code trivia, rewards system, dynamic content
+- **Real-time data** - Menu items loaded from database
+- **Advanced functionality** - User points, streaks, location finder
+
+## Components
+
+### Simple Version Components
+- `SimpleNavigation.tsx` - Clean navigation with smooth scrolling
+- `SimpleHero.tsx` - Hero section with call-to-action buttons
+- `SimpleMenu.tsx` - Static menu with hardcoded items and pricing
+- `SimpleContact.tsx` - Contact information and location details
+- `SimpleFooter.tsx` - Clean footer with essential information
+
+### Original Complex Components
+- All original components remain available for the full version
+- Database integration and API calls preserved
+- Full trivia and rewards system functionality maintained
+
 ## Changelog
 
 ```
 Changelog:
 - July 03, 2025. Initial setup
+- July 03, 2025. Added simplified landing page version - removed database dependency, created static components for minimalist coffee shop landing page
 ```
 
 ## User Preferences
