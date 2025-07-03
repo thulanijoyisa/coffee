@@ -40,11 +40,11 @@ export default function Rewards() {
             </h2>
             
             <p className="text-coffee-brown leading-relaxed">
-              TŌKI is the first café that rewards your mind and your loyalty.
+              TŌKI will be the first café that rewards your mind and your loyalty.
             </p>
             
             <p className="text-coffee-brown leading-relaxed">
-              Each cup comes with a unique QR code — scan it to:
+              Each cup will come with a unique QR code — scan it to:
             </p>
             
             <div className="space-y-4">
@@ -105,8 +105,8 @@ export default function Rewards() {
               <Card className="bg-warm-beige shadow-2xl">
                 <CardContent className="p-8">
                   <div className="text-center mb-8">
-                    <h3 className="text-2xl font-bold text-coffee-dark mb-2">Scan Your Cup</h3>
-                    <p className="text-coffee-brown">Try our QR code demo</p>
+                    <h3 className="text-2xl font-bold text-coffee-dark mb-2">Coming Soon: QR Rewards</h3>
+                    <p className="text-coffee-brown">Preview of our future trivia system</p>
                   </div>
                   
                   <Card className="bg-white shadow-lg mb-6">

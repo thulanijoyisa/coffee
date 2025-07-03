@@ -117,9 +117,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const menuItems = await storage.getMenuItems();
       const questions = await storage.getTriviaQuestions();
       
+      const uniqueCities = new Set(locations.map(l => l.city));
       const stats = {
         locations: locations.length,
-        cities: [...new Set(locations.map(l => l.city))].length,
+        cities: Array.from(uniqueCities).length,
         menuItems: menuItems.length,
         triviaQuestions: questions.length,
         openingSoon: locations.filter(l => !l.isOpen).length,

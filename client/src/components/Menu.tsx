@@ -79,7 +79,7 @@ export default function Menu() {
               <Card key={item.id} className="bg-cream shadow-lg">
                 <CardContent className="p-6">
                   <img 
-                    src="/src/assets/9E4F7D9C-6C3D-4BB3-9030-415B104A8C0B_1751549649417.PNG" 
+                    src="@assets/9E4F7D9C-6C3D-4BB3-9030-415B104A8C0B_1751549649417.PNG" 
                     alt="TŌKI matcha latte in branded cup" 
                     className="rounded-lg w-full h-auto mb-4"
                   />

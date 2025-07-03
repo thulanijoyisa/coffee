@@ -106,7 +106,7 @@ export default function LocationFinder({ locations, stats }: LocationFinderProps
                   <div className="flex items-center space-x-1">
                     <Clock className="text-wood-dark" size={14} />
                     <span className="text-sm text-wood-dark">
-                      {location.isOpen ? "Open" : "Closed"}
+                      {location.isOpen ? "Open" : "Coming Soon"}
                     </span>
                   </div>
                   <ChevronRight className="text-wood-dark" size={16} />

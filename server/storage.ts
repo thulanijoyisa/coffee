@@ -97,26 +97,36 @@ export class MemStorage implements IStorage {
     menuItemsData.forEach(item => {
       const menuItem: MenuItem = {
         id: this.currentMenuItemId++,
-        ...item,
+        name: item.name,
+        description: item.description,
+        category: item.category,
         price: item.price,
+        available: item.available,
+        featured: item.featured,
       };
       this.menuItems.set(menuItem.id, menuItem);
     });
 
     // Initialize locations
     const locationsData = [
-      { name: "TŌKI Shibuya", address: "1-1-1 Shibuya", city: "Tokyo", country: "Japan", latitude: "35.6598", longitude: "139.7023", type: "storefront", isOpen: true, openingHours: "7:00 AM - 9:00 PM" },
-      { name: "TŌKI Harajuku", address: "2-2-2 Harajuku", city: "Tokyo", country: "Japan", latitude: "35.6702", longitude: "139.7026", type: "storefront", isOpen: true, openingHours: "7:00 AM - 9:00 PM" },
-      { name: "TŌKI Shinjuku Cart", address: "3-3-3 Shinjuku", city: "Tokyo", country: "Japan", latitude: "35.6896", longitude: "139.6917", type: "cart", isOpen: true, openingHours: "7:00 AM - 7:00 PM" },
-      { name: "TŌKI Roppongi", address: "4-4-4 Roppongi", city: "Tokyo", country: "Japan", latitude: "35.6627", longitude: "139.7371", type: "kiosk", isOpen: true, openingHours: "6:00 AM - 10:00 PM" },
+      { name: "TŌKI Shibuya", address: "1-1-1 Shibuya", city: "Tokyo", country: "Japan", latitude: "35.6598", longitude: "139.7023", type: "storefront", isOpen: false, openingHours: "Coming Soon" },
+      { name: "TŌKI Harajuku", address: "2-2-2 Harajuku", city: "Tokyo", country: "Japan", latitude: "35.6702", longitude: "139.7026", type: "storefront", isOpen: false, openingHours: "Coming Soon" },
+      { name: "TŌKI Shinjuku Cart", address: "3-3-3 Shinjuku", city: "Tokyo", country: "Japan", latitude: "35.6896", longitude: "139.6917", type: "cart", isOpen: false, openingHours: "Coming Soon" },
+      { name: "TŌKI Roppongi", address: "4-4-4 Roppongi", city: "Tokyo", country: "Japan", latitude: "35.6627", longitude: "139.7371", type: "kiosk", isOpen: false, openingHours: "Coming Soon" },
     ];
 
     locationsData.forEach(location => {
       const locationItem: Location = {
         id: this.currentLocationId++,
-        ...location,
+        name: location.name,
+        address: location.address,
+        city: location.city,
+        country: location.country,
         latitude: location.latitude,
         longitude: location.longitude,
+        type: location.type,
+        isOpen: location.isOpen,
+        openingHours: location.openingHours,
       };
       this.locations.set(locationItem.id, locationItem);
     });
@@ -132,8 +142,12 @@ export class MemStorage implements IStorage {
     triviaQuestionsData.forEach(question => {
       const triviaQuestion: TriviaQuestion = {
         id: this.currentTriviaQuestionId++,
-        ...question,
+        question: question.question,
         options: question.options,
+        correctAnswer: question.correctAnswer,
+        difficulty: question.difficulty,
+        category: question.category,
+        points: question.points,
       };
       this.triviaQuestions.set(triviaQuestion.id, triviaQuestion);
     });

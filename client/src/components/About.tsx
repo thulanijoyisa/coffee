@@ -37,7 +37,7 @@ export default function About() {
               
               <div className="flex items-center justify-center">
                 <img 
-                  src="/src/assets/EC61D212-899D-4964-848B-026154FF0DBC_1751549649423.PNG" 
+                  src="@assets/EC61D212-899D-4964-848B-026154FF0DBC_1751549649423.PNG" 
                   alt="TŌKI branded coffee cups" 
                   className="rounded-lg shadow-lg max-w-full h-auto"
                 />
@@ -47,7 +47,7 @@ export default function About() {
           
           <div className="relative">
             <img 
-              src="/src/assets/9FB6BF10-5CAC-4DBE-AAA3-B98B2EE36490_1751549649417.PNG" 
+              src="@assets/9FB6BF10-5CAC-4DBE-AAA3-B98B2EE36490_1751549649417.PNG" 
               alt="TŌKI mobile coffee cart with minimalist design" 
               className="rounded-2xl shadow-2xl w-full h-auto"
             />
