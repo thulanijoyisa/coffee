@@ -21,11 +21,11 @@ export default function SimpleContact() {
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <Card className="bg-warm-beige shadow-lg">
+            <Card className="bg-warm-beige shadow-soft hover:shadow-warm transition-all duration-300 animate-fadeInUp">
               <CardContent className="p-8">
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="bg-wood-light p-3 rounded-full">
+                    <div className="bg-wood-light p-3 rounded-full animate-pulse-gentle">
                       <MapPin className="text-coffee-dark" size={24} />
                     </div>
                     <div>
@@ -82,11 +82,57 @@ export default function SimpleContact() {
           </div>
           
           <div className="relative">
-            <img 
-              src="@assets/9FB6BF10-5CAC-4DBE-AAA3-B98B2EE36490_1751549649417.PNG" 
-              alt="TŌKI mobile coffee cart with minimalist design" 
-              className="rounded-2xl shadow-2xl w-full h-auto"
-            />
+            <div className="bg-gradient-to-br from-warm-beige to-cream rounded-2xl shadow-2xl p-8 h-96 flex items-center justify-center">
+              <svg viewBox="0 0 300 250" className="w-full h-full">
+                {/* Japanese-style storefront */}
+                <rect width="300" height="250" fill="#F5F1E8" />
+                
+                {/* Building structure */}
+                <rect x="50" y="100" width="200" height="120" fill="#D4B895" />
+                <rect x="60" y="110" width="180" height="100" fill="#F5F1E8" />
+                
+                {/* Roof */}
+                <polygon points="40,100 150,50 260,100" fill="#8B4513" />
+                <polygon points="45,95 150,55 255,95" fill="#A0522D" />
+                
+                {/* Window */}
+                <rect x="80" y="130" width="60" height="40" fill="#87CEEB" rx="4" />
+                <rect x="100" y="150" width="20" height="20" fill="#FFF" opacity="0.8" />
+                
+                {/* Door */}
+                <rect x="170" y="160" width="40" height="60" fill="#654321" rx="4" />
+                <circle cx="200" cy="190" r="2" fill="#FFD700" />
+                
+                {/* TŌKI sign */}
+                <rect x="120" y="85" width="60" height="20" fill="#2F1B14" rx="4" />
+                <text x="150" y="98" textAnchor="middle" fontSize="12" fill="#FFF" fontWeight="bold">TŌKI</text>
+                
+                {/* Coffee cup sign */}
+                <circle cx="90" cy="95" r="8" fill="#8B4513" />
+                <path d="M85 90 Q87 85 85 80" stroke="#E6E6FA" strokeWidth="1" fill="none" opacity="0.7" />
+                <path d="M90 90 Q92 85 90 80" stroke="#E6E6FA" strokeWidth="1" fill="none" opacity="0.7" />
+                <path d="M95 90 Q97 85 95 80" stroke="#E6E6FA" strokeWidth="1" fill="none" opacity="0.7" />
+                
+                {/* Plants */}
+                <ellipse cx="40" cy="200" rx="8" ry="20" fill="#228B22" />
+                <rect x="37" y="210" width="6" height="10" fill="#8B4513" />
+                
+                <ellipse cx="260" cy="190" rx="10" ry="25" fill="#228B22" />
+                <rect x="256" y="205" width="8" height="15" fill="#8B4513" />
+                
+                {/* Sidewalk */}
+                <rect x="0" y="220" width="300" height="30" fill="#D3D3D3" />
+                
+                {/* Street lamp */}
+                <rect x="20" y="120" width="4" height="100" fill="#2F1B14" />
+                <ellipse cx="22" cy="115" rx="8" ry="5" fill="#FFD700" />
+                
+                {/* Small details */}
+                <circle cx="240" cy="40" r="8" fill="#FFF" opacity="0.8" />
+                <circle cx="250" cy="35" r="6" fill="#FFF" opacity="0.6" />
+                <circle cx="260" cy="45" r="4" fill="#FFF" opacity="0.4" />
+              </svg>
+            </div>
           </div>
         </div>
       </div>

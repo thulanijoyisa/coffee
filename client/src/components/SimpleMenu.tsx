@@ -87,12 +87,12 @@ export default function SimpleMenu() {
         
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div className="md:col-span-2 grid sm:grid-cols-2 gap-6">
-            {menuItems.map((item) => (
-              <Card key={item.id} className="bg-cream shadow-lg hover:shadow-xl transition-shadow duration-200">
+            {menuItems.map((item, index) => (
+              <Card key={item.id} className="bg-cream shadow-soft hover:shadow-warm transition-all duration-300 hover:scale-105 animate-fadeInUp" style={{animationDelay: `${index * 0.1}s`}}>
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-xl font-semibold text-coffee-dark">{item.name}</h3>
-                    {getIcon(item.category)}
+                    <div className="animate-pulse-gentle">{getIcon(item.category)}</div>
                   </div>
                   <p className="text-coffee-brown mb-2">{item.description}</p>
                   <p className="text-wood-dark font-semibold">{item.price}</p>
@@ -104,11 +104,35 @@ export default function SimpleMenu() {
           <div className="space-y-6">
             <Card className="bg-cream shadow-lg">
               <CardContent className="p-6">
-                <img 
-                  src="@assets/9E4F7D9C-6C3D-4BB3-9030-415B104A8C0B_1751549649417.PNG" 
-                  alt="TŌKI matcha latte in branded cup" 
-                  className="rounded-lg w-full h-auto mb-4"
-                />
+                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-lg p-6 mb-4 h-40 flex items-center justify-center">
+                  <svg viewBox="0 0 200 150" className="w-full h-full">
+                    {/* Matcha latte cup */}
+                    <ellipse cx="100" cy="130" rx="40" ry="8" fill="#D2691E" opacity="0.3" />
+                    <rect x="75" y="90" width="50" height="40" fill="#FFF" stroke="#8B4513" strokeWidth="2" rx="4" />
+                    <rect x="78" y="93" width="44" height="25" fill="#98FB98" rx="2" />
+                    <rect x="78" y="118" width="44" height="9" fill="#FFF" rx="2" />
+                    
+                    {/* Handle */}
+                    <path d="M125 100 Q140 100 140 115 Q140 130 125 130" stroke="#8B4513" strokeWidth="2" fill="none" />
+                    
+                    {/* Foam art */}
+                    <ellipse cx="100" cy="100" rx="15" ry="8" fill="#F0FFF0" />
+                    <path d="M90 100 Q100 95 110 100" stroke="#98FB98" strokeWidth="2" fill="none" />
+                    
+                    {/* Steam */}
+                    <path d="M85 75 Q87 70 85 65" stroke="#E6E6FA" strokeWidth="2" fill="none" opacity="0.7" />
+                    <path d="M100 75 Q102 70 100 65" stroke="#E6E6FA" strokeWidth="2" fill="none" opacity="0.7" />
+                    <path d="M115 75 Q117 70 115 65" stroke="#E6E6FA" strokeWidth="2" fill="none" opacity="0.7" />
+                    
+                    {/* Background elements */}
+                    <circle cx="50" cy="40" r="3" fill="#90EE90" opacity="0.5" />
+                    <circle cx="150" cy="35" r="4" fill="#90EE90" opacity="0.5" />
+                    <circle cx="160" cy="60" r="2" fill="#90EE90" opacity="0.5" />
+                    
+                    {/* TŌKI logo on cup */}
+                    <text x="100" y="110" textAnchor="middle" fontSize="8" fill="#228B22" fontWeight="bold">TŌKI</text>
+                  </svg>
+                </div>
                 <h3 className="text-xl font-semibold text-coffee-dark mb-2">
                   Featured: {featuredItem.name}
                 </h3>

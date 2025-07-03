@@ -14,11 +14,11 @@ export default function SimpleNavigation() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-cream/95 backdrop-blur-sm border-b border-coffee-dark/10">
+    <nav className="sticky top-0 z-50 bg-cream/95 backdrop-blur-sm border-b border-coffee-dark/10 shadow-soft">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center space-x-2">
-            <Coffee className="text-coffee-dark" size={24} />
+          <div className="flex items-center space-x-2 animate-fadeInUp">
+            <Coffee className="text-coffee-dark animate-pulse-gentle" size={24} />
             <span className="text-xl font-bold text-coffee-dark">TŌKI</span>
           </div>
           

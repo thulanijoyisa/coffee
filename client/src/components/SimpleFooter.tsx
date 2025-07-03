@@ -2,12 +2,12 @@ import { Coffee, Mail, Phone, MapPin } from "lucide-react";
 
 export default function SimpleFooter() {
   return (
-    <footer className="bg-coffee-dark text-cream py-12">
+    <footer className="gradient-coffee text-cream py-12 shadow-warm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
-          <div className="space-y-4">
+          <div className="space-y-4 animate-fadeInUp">
             <div className="flex items-center space-x-2">
-              <Coffee className="text-wood-light" size={24} />
+              <Coffee className="text-wood-light animate-pulse-gentle" size={24} />
               <span className="text-xl font-bold">TŌKI</span>
             </div>
             <p className="text-cream/80 text-sm">
