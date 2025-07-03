@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(45, 60%, 97%);
+  --foreground: hsl(30, 40%, 10%);
+  --card: hsl(45, 60%, 97%);
+  --card-foreground: hsl(30, 40%, 10%);
+  --popover: hsl(45, 60%, 97%);
+  --popover-foreground: hsl(30, 40%, 10%);
+  --primary: hsl(24, 42%, 43%);
+  --primary-foreground: hsl(45, 60%, 97%);
+  --secondary: hsl(40, 25%, 88%);
+  --secondary-foreground: hsl(30, 40%, 10%);
+  --muted: hsl(40, 25%, 95%);
+  --muted-foreground: hsl(30, 20%, 45%);
+  --accent: hsl(40, 25%, 88%);
+  --accent-foreground: hsl(30, 40%, 10%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(45, 60%, 97%);
+  --border: hsl(30, 20%, 85%);
+  --input: hsl(30, 20%, 85%);
+  --ring: hsl(24, 42%, 43%);
+  --radius: 0.5rem;
+  
+  /* Custom TŌKI colors */
+  --warm-beige: hsl(38, 30%, 93%);
+  --cream: hsl(45, 60%, 97%);
+  --wood-light: hsl(34, 45%, 65%);
+  --wood-dark: hsl(34, 35%, 60%);
+  --coffee-dark: hsl(24, 42%, 15%);
+  --coffee-brown: hsl(24, 35%, 35%);
+  --soft-gray: hsl(40, 25%, 96%);
+  --dark-text: hsl(30, 40%, 10%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 4%);
+  --foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 4%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --popover: hsl(240, 10%, 4%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --primary: hsl(24, 42%, 43%);
+  --primary-foreground: hsl(45, 60%, 97%);
+  --secondary: hsl(240, 4%, 16%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 4%, 16%);
+  --muted-foreground: hsl(240, 5%, 65%);
+  --accent: hsl(240, 4%, 16%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 4%, 16%);
+  --input: hsl(240, 4%, 16%);
+  --ring: hsl(240, 5%, 84%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-warm-beige {
+    color: hsl(38, 30%, 93%);
+  }
+  
+  .bg-warm-beige {
+    background-color: hsl(38, 30%, 93%);
+  }
+  
+  .text-cream {
+    color: hsl(45, 60%, 97%);
+  }
+  
+  .bg-cream {
+    background-color: hsl(45, 60%, 97%);
+  }
+  
+  .text-wood-light {
+    color: hsl(34, 45%, 65%);
+  }
+  
+  .bg-wood-light {
+    background-color: hsl(34, 45%, 65%);
+  }
+  
+  .text-wood-dark {
+    color: hsl(34, 35%, 60%);
+  }
+  
+  .bg-wood-dark {
+    background-color: hsl(34, 35%, 60%);
+  }
+  
+  .text-coffee-dark {
+    color: hsl(24, 42%, 15%);
+  }
+  
+  .bg-coffee-dark {
+    background-color: hsl(24, 42%, 15%);
+  }
+  
+  .text-coffee-brown {
+    color: hsl(24, 35%, 35%);
+  }
+  
+  .bg-coffee-brown {
+    background-color: hsl(24, 35%, 35%);
+  }
+  
+  .text-soft-gray {
+    color: hsl(40, 25%, 96%);
+  }
+  
+  .bg-soft-gray {
+    background-color: hsl(40, 25%, 96%);
+  }
+  
+  .text-dark-text {
+    color: hsl(30, 40%, 10%);
+  }
+  
+  .bg-dark-text {
+    background-color: hsl(30, 40%, 10%);
+  }
+}
