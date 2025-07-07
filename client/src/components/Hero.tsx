@@ -10,7 +10,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative bg-warm-beige py-20 md:py-32">
+    <section className="relative bg-warm-beige py-10 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
