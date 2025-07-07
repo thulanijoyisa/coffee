@@ -47,7 +47,7 @@ export default function Hero() {
           
           <div className="relative">
             <img 
-              src="@assets/925D711E-31A7-4E16-BA7C-9C83C37232BE_1751549649418.PNG" 
+              src="/assets/925D711E-31A7-4E16-BA7C-9C83C37232BE_1751549649418.PNG" 
               alt="TŌKI cafe interior with minimalist Japanese design" 
               className="rounded-2xl shadow-2xl w-full h-auto"
             />

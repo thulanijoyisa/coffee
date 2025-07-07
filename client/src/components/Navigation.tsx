@@ -19,8 +19,11 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <Coffee className="text-coffee-dark mr-2" size={24} />
-              <span className="text-2xl font-bold text-coffee-dark">TŌKI</span>
+              <img
+                  src="/assets/TOKI LOGO - JAPAN RAMEN.svg"
+                  alt="TŌKI logo"
+                  className="w-13 h-12 object-contain"
+                />
             </div>
           </div>
           

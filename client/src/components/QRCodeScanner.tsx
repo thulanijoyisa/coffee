@@ -117,7 +117,7 @@ export default function QRCodeScanner({ question, onClose, userPoints, userStrea
                 <div className="bg-cream p-4 rounded-lg">
                   <p className="text-coffee-brown">Points</p>
                   <p className="text-xl font-bold text-coffee-dark">
-                    {userPoints + (isCorrect ? question.points : 0)}
+                    {userPoints + (isCorrect ? (question.points ?? 0) : 0)}
                   </p>
                 </div>
                 <div className="bg-cream p-4 rounded-lg">

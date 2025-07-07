@@ -110,7 +110,7 @@ export default function Locations() {
               <Card className="bg-cream">
                 <CardContent className="p-4">
                   <img 
-                    src="@assets/02313890-A899-409C-9E1A-67E4F7DCABC7_1751549649421.PNG" 
+                    src="/assets/02313890-A899-409C-9E1A-67E4F7DCABC7_1751549649421.PNG" 
                     alt="TŌKI compact storefront with warm wood design" 
                     className="rounded-lg w-full h-auto mb-3"
                   />
@@ -121,7 +121,7 @@ export default function Locations() {
               <Card className="bg-cream">
                 <CardContent className="p-4">
                   <img 
-                    src="@assets/A181DD42-3A4D-47C8-A48C-2073790984FD_1751549649423.PNG" 
+                    src="/assets/A181DD42-3A4D-47C8-A48C-2073790984FD_1751549649423.PNG" 
                     alt="TŌKI mobile coffee cart with canopy" 
                     className="rounded-lg w-full h-auto mb-3"
                   />
